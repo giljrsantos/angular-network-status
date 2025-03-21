@@ -50,59 +50,46 @@ Esses eventos detectam automaticamente quando o usuário fica online ou offline,
 
 ```graphql
 angular-network-status/
-│── src/
-│   ├── app/
-│   │   ├── components/
-|   |   |   |   |─── home/
-│   │   │   │   |   |  |─ home.component.ts
-│   │   │   │   |   |  |─ home.component.ts.spec.ts
-|   |   |   |   |─── search-cars/
-│   │   │   │   |   |   | |───── search-cars.component.ts
-│   │   │   │   |   |   | |───── search-cars.component.spec.ts
-|   |   |   |   |─── add-car/
-│   │   │   │   |   |   | |───── add-car.component.ts
-│   │   │   │   |   |   | |───── add-car.component.spec.ts
-|   |   |   |   |─── update-car/
-│   │   │   │   |   |   | |───── update-car.component.ts
-│   │   │   │   |   |   | |───── update-car.component.spec.ts
-|   |   |   |   |─── delete-car/
-│   │   │   │   |   |   | |───── delete-car.component.ts
-│   │   │   │   |   |   | |───── delete-car.component.spec.ts
-│   │   ├── corre/
-│   │   │   ├── services/
-|   |   |   |   |────── add-car/
-│   │   │   │   |   |   | |──── add-car.service.ts
-│   │   │   │   |   |   | |──── add-car.service.spec.ts
-|   |   |   |   |────── search-cars/
-│   │   │   │   |   |   | |──────── search-cars.service.ts
-│   │   │   │   |   |   | |──────── search-cars.service.spec.ts
-|   |   |   |   |────── update-car/
-│   │   │   │   |   |   | |─────── update-car.service.ts
-│   │   │   │   |   |   | |─────── update-car.service.spec.ts
-│   │   ├── shared/
-│   │   │   ├── interface/
-│   │   │   |   | |────── i-add-car-request.ts
-│   │   │   |   | |────── i-search-car-request.ts
-│   │   │   |   | |────── i-search-car-response.ts
-│   │   │   |   | |────── i-update-car-response.ts
-│   │   │   ├── util/
-|   |   |   |   |──function/
-│   │   │   │   |  | | |─── gerarDataAtual.ts
-│   │   │   │   |  | | |─── gerarDataAtual.spec.ts
-|   |   |   |   |──pipe/
-│   │   │   │   |  |─── formata-placa.pipe.ts
-│   │   │   │   |  |─── formata-placa.pipe.spec.ts
-│   ├── assets/
-│   │   ├── img/
-│   │   ├── mock/
-│   │   │   │ ├─ m-add-car.mock.ts
-│   │   │   │ ├─ m-cars-request.mock.ts
-│   │   │   │ ├─ m-cars-response.mock.ts
-│   │   │   │ ├─ m-update-car.mock.ts
-│   ├── environments/
-│── jest.config.js
-│── package.json
-│── README.md
+├── .angulardoc.json
+├── .editorconfig
+├── .gitignore
+├── README.md
+├── angular.json
+├── package-lock.json
+├── package.json
+├── src
+    ├── app
+    │   ├── app.component.html
+    │   ├── app.component.scss
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.config.ts
+    │   ├── app.routes.ts
+    │   ├── components
+    │   │   └── network-status
+    │   │   │   ├── network-status.component.html
+    │   │   │   ├── network-status.component.scss
+    │   │   │   ├── network-status.component.spec.ts
+    │   │   │   └── network-status.component.ts
+    │   └── core
+    │   │   └── service
+    │   │       ├── network-status.service.spec.ts
+    │   │       └── network-status.service.ts
+    ├── assets
+    │   ├── .gitkeep
+    │   └── img
+    │   │   ├── offline.jpg
+    │   │   ├── offline.png
+    │   │   ├── offline2.jpg
+    │   │   ├── online.jpg
+    │   │   └── online.png
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    └── styles.scss
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
 
 ```
 
