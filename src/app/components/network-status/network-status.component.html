@@ -1,0 +1,4 @@
+<div class="network-status" [class.offline]="!isOnline">
+  <p *ngIf="isOnline">🟢 Online</p>
+  <p *ngIf="!isOnline">🔴 Offline</p>
+</div>

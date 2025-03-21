@@ -1,0 +1,20 @@
+.network-status {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: green;
+  margin-top: 25%;
+}
+
+.network-status.offline {
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+}
